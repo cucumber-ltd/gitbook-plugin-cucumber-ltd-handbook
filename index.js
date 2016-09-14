@@ -15,6 +15,10 @@ function getArticleByTitle(book, title) {
     if (_article.title == title)
       path = _article.path
   })
+
+  if (!path)
+    return null
+
   return book.summary.getArticleByPath(path)
 }
 
@@ -26,7 +30,9 @@ module.exports = {
       var book = this
       var person = getPersonNamed(book, name)
       var roleTitles = person.roles || []
-      return roleTitles.map(function(title) { return getArticleByTitle(book, title) })
+      return roleTitles.map(function(title) { 
+        return getArticleByTitle(book, title) || { title: title }
+      })
     },
 
     // return all the people playing a given role
