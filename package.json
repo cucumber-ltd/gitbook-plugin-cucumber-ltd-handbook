@@ -6,6 +6,6 @@
   "author": "Matt Wynne <matt@cucumber.io>",
   "license": "MIT",
   "engines": {
-    "gitbook": ">3.x.x"
+    "gitbook": ">3.1.1"
   }
 }
