@@ -1,0 +1,11 @@
+{
+  "name": "gitbook-plugin-cucumber-ltd-handbook",
+  "version": "1.0.0",
+  "description": "Various extensions to make the Cucumber Ltd handbook work",
+  "main": "index.js",
+  "author": "Matt Wynne <matt@cucumber.io>",
+  "license": "MIT",
+  "engines": {
+    "gitbook": ">=3.2.0"
+  }
+}
